@@ -2,18 +2,14 @@
 
 ## About Me Project
 
-This project will prompt the user of the website for questions about me 
+This project will prompt the user of the website for questions about me. It also provides some basic information about me.
 
 ### Author: Jona Brown
 
-
-
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+* https://www.youtube.com/watch?v=_PjMGEC-9dg&t=1250s
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* First commit of this project focused on the Javascript and html portion. 
+* I tackled this project with JS first, HMTL second and CSS last. I found it most helpful to lay out the scaffolding for each of the file's structures before putting in the content.
 
-First commit of this project focused on the Javascript and html portion. 
