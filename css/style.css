@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', serif;
+}
+
+body {
+background-color: #e4aa3e6b}
+
+h2 {
+  font-size: 2em;
+  padding: 0 30px;
+}
+
+h3 {
+padding: 0 15px;
+}
+
+p {
+  padding: 0 15px;
+}
+
+header {
+  justify-content: center;
+  align-content: center;
+}
+
+#intro-img {
+  width: 25%;
+  border-radius: 3%;
+  float: right;
+}
+
+#secondary-img {
+border-radius: 3%;
+width: 25%;
+}
+
+.main-sections {
+  border: solid #181306e1 5px;
+  border-radius: 1%;
+  margin: 20px 300px;
+  background-color: #4477809f; 
+}
+
+footer { 
+  background-color: #181306e1;
+  color: whitesmoke;
+  display: inline-block;
+  border-radius: 10%;
+}
