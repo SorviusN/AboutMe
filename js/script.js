@@ -100,7 +100,6 @@ for (let i = 0; i < 4; i++) {
     countDown--;
     console.log('Decrementing Countdown.');
   }
-
   else if (num < myAnswer) {
     alert('Not quite, try guessing higher.');
     countDown--;
@@ -119,6 +118,7 @@ let artists = [
   'prince',
   'dolly parton',
   'amy winehouse',
+  'micheal jackson'
   'chet atkins',
   'lady gaga',
   'freddie mercury',
@@ -147,7 +147,8 @@ for (let a = 0; a < 7; a++) {
   }
 }
 
-alert('Thank you very much for answering my questions, ' + userName + ', you got ' + amountCorrect + ' out of 7 correct!');
+alert('Thank you very much for answering my questions, correct answers for the artists were ' + artists[0] + ', ' + artists[1] + ', ' + artists[2] +', ' + artists[3] + ',' + artists[4] + ', '
+  + artists[5] + ', ' + artists[6] + ', ' + artists[7] + ', ' + artists[8] + ', ' + artists[9] + '. Also - you got ' + amountCorrect + ' out of 7 answers correct! Thanks for your time, ' + userName + '.');
 
 
 
