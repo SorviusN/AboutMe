@@ -2,23 +2,47 @@
 
 //console.log('Welcomes user to webpage.');
 
-let amountCorrect = 0;
+//for (let a = 0; a < 5; a++) {
+//  console.log(n,' value at loop start');
+//  answers[n] = prompt(questions[n]);
+//  if ( answers[n].toLowerCase() === 'yes' || answers[n].toLowerCase() ==='no') {
 
-let userName = prompt('Greetings! I hope you are well. What is your name?');
+//  }
+//  else {
+//    alert('Sorry, not a valid answer..please try again.');
+//    a--
+//  }
+//}
 
-let ageQuestion = prompt('Hello there ' + userName + '! Welcome to my webpage. How old do you think I am? Please enter in a number (Hint: It\'s between 20 and 30).');
 
-// Prompts the user for a question
+let amountCorrect = 0; // Tracker for amount of questions answered correctly
 
-if (ageQuestion === '24') {
-  amountCorrect++;
-  //console.log('That is correct, great guessing!');
-  alert('That is correct, great guessing!');
+let userName;
+
+function checkUser() {
+  while(!userName);
+  userName = prompt('Greetings! Before we begin, what is your name?'); // Prompts user for a name.
+  return userName;
 }
-else {
-  //console.log('So close! Thanks for trying :), I am 24.');
-  alert('So close! Thanks for trying :), I am 24.');
+
+checkUser();
+
+console.log('Username is ' + userName + '.');
+
+function firstQuestion() {
+  let ageQuestion = prompt('Hello there ' + userName + '! Welcome to my webpage. How old do you think I am? Please enter in a number (Hint: It\'s between 20 and 30).');
+  if (ageQuestion === '24') {
+    amountCorrect++;
+    //console.log('That is correct, great guessing!');
+    alert('That is correct, great guessing!');
+  }
+  else {
+    //console.log('So close! Thanks for trying :), I am 24.');
+    alert('So close! Thanks for trying :), I am 24.');
+  }
 }
+
+firstQuestion();
 
 let birthdayQuestion = prompt('Second question - In what month was I born?');
 
@@ -68,7 +92,7 @@ else {
   alert('Good guess! I speak two languages - Spanish and English.');
 }
 
-let animalQuestion = prompt('Last question - Can you guess my favorite animal? Hint: it\'s a reptile.');
+let animalQuestion = prompt('Last question - Can you guess my favorite animal? (Hint: it\'s a reptile.)');
 
 animalQuestion = animalQuestion.toLowerCase();
 
@@ -82,11 +106,10 @@ else {
   alert('While I probably like ' + animalQuestion + ' as well, my favorite animal is the turtle. I enjoy their resilience and laid-back lifestyle.');
 }
 
-
-console.log('creating variable named myAnswer for the answer to the numbers question.');
+//creating variable named myAnswer for the answer to the numbers question.
 let myAnswer = 2;
 
-console.log('creating variable named countDown for the amount of guesses left for the user as well as decrementing a counter for the while loop.');
+//creating variable named countDown for the amount of guesses left for the user as well as decrementing a counter for the while loop
 let countDown = 4;
 
 console.log('pre-initializing num for the while loop. Not entirely sure if necessary.');
@@ -118,7 +141,7 @@ let artists = [
   'prince',
   'dolly parton',
   'amy winehouse',
-  'micheal jackson'
+  'micheal jackson',
   'chet atkins',
   'lady gaga',
   'freddie mercury',
@@ -149,6 +172,7 @@ for (let a = 0; a < 7; a++) {
 
 alert('Thank you very much for answering my questions, correct answers for the artists were ' + artists[0] + ', ' + artists[1] + ', ' + artists[2] +', ' + artists[3] + ',' + artists[4] + ', '
   + artists[5] + ', ' + artists[6] + ', ' + artists[7] + ', ' + artists[8] + ', ' + artists[9] + '. Also - you got ' + amountCorrect + ' out of 7 answers correct! Thanks for your time, ' + userName + '.');
+
 
 
 
