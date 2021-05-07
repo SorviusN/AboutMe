@@ -115,9 +115,7 @@ let countDown = 4;
 console.log('pre-initializing num for the while loop. Not entirely sure if necessary.');
 
 for (let i = 0; i < 4; i++) {
-
-  let num = prompt('Try to guess my number between 1 and 10, you have ' + countDown + ' guesses left. Please answer in number format.');
-
+  let num = prompt('Now for some guessing games. Try to guess my number between 1 and 10, you have ' + countDown + ' guesses left. Please answer in number format.');
   if (num > myAnswer) {
     alert('Not quite, try guessing lower.');
     countDown--;
