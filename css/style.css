@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', serif;
-  border: solid orange 3px;
 }
 
 body {
@@ -49,13 +48,14 @@ header {
   width: 25%;
   border-radius: 3%;
   margin-right: 10%;
+  border: solid black 3px;
 }
 
 #secondary-img {
   border-radius: 3%;
   width: 25%;
   margin-left: 10%;
-
+  border: solid black 3px;
 }
 
  #intro {
@@ -68,7 +68,8 @@ header {
 } 
 
 #top-ten {
-bottom: 0;}
+  top: 900px;
+}
 
 .left-sections {
   border: solid #181306e1 5px;
@@ -76,8 +77,9 @@ bottom: 0;}
   margin: 20px;
   margin-right: 53%;
   background-color: #4477809f; 
-  box-shadow: -.5em .5em #111111;
   opacity: 0.8;
+  box-shadow: -.5em .5em #111111;
+  bottom: 1000px;
 }
 
 .right-sections {
@@ -88,7 +90,6 @@ bottom: 0;}
   background-color: #4477809f; 
   box-shadow: -.5em .5em #111111;
   opacity: 0.8;
-  position: absolute;
 }
 
 footer { 

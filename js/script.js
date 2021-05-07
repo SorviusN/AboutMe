@@ -105,7 +105,6 @@ function fourthQuestion() {
 }
 fourthQuestion();
 
-<<<<<<< HEAD
 //creating variable named myAnswer for the answer to the numbers question.
 let myAnswer = 2;
 
@@ -125,7 +124,6 @@ for (let i = 0; i < 4; i++) {
     alert('Not quite, try guessing higher.');
     countDown--;
     console.log('Decrementing Countdown.');
-=======
 function fifthQuestion() {
   let animalQuestion = prompt('Last question - Can you guess my favorite animal? (Hint: it\'s a reptile.)');
 
@@ -136,7 +134,6 @@ function fifthQuestion() {
     //console.log('Correct. I have owned a turtle for most of my life and enjoy their laid-back lifestyle.');
     alert('Correct. I have owned a turtle for most of my life and enjoy their laid-back lifestyle.');
     return true;
->>>>>>> 0304174f5443832f7f7b7fe9bf5a1bb0e9cabff2
   }
   else {
     //console.log('While I probably like ' + animalQuestion + ' as well, my favorite animal is the turtle. I enjoy their resilience and laid-back lifestyle.');
