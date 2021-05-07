@@ -1,13 +1,15 @@
 * {
-  box-sizing: border-box;
   font-family: 'Montserrat', serif;
+  border: solid pink 1px;
 }
 
 body {
-  background-color: #e4aa3e6b;
+  box-sizing: border-box;
+  background-color #FFFB9C;
 }
 
 main {
+  display: grid;
  }
 
 h1 {
@@ -23,14 +25,14 @@ h2 {
   padding: 0 20px;
 }
 
-h3 {
+h3 p {
   padding: 0 15px;
 }
 
-p {
-  padding: 0 15px;
+ul ol {
+  line-height: 1.5em;
+  list-style-type: decimal;
 }
-
 li {
   margin: 10px auto;
 }
@@ -41,61 +43,67 @@ header {
   text-align: center;
   background-color: #181306e1;
   opacity: 0.9;
-  border-radius: 1%;
+  border-radius: 2%;
 }
+
 
 #intro-img {
   width: 25%;
   border-radius: 3%;
-  margin-right: 10%;
   border: solid black 3px;
+  box-shadow: -.5em .5em #111111;
+  margin-left: 20px;
+  opacity: 0.8;
 }
 
 #secondary-img {
-  border-radius: 3%;
   width: 25%;
-  margin-left: 10%;
+  border-radius: 3%;
   border: solid black 3px;
+  box-shadow: -.3em .3em #111111;
+  float: right;
+  margin-right: 20px;
+  opacity: 0.8;
 }
 
  #intro {
   border: solid #181306e1 5px;
   border-radius: 1%;
   margin: 20px;
+  padding: 20px;
   background-color: #4477809f; 
   box-shadow: -.5em .5em #111111;
   opacity: 0.8;
+
 } 
 
-#top-ten {
-  top: 900px;
+#work-experience {
+  width: 400px;
 }
-
-.left-sections {
+.sections {
   border: solid #181306e1 5px;
   border-radius: 1%;
   margin: 20px;
-  margin-right: 53%;
   background-color: #4477809f; 
   opacity: 0.8;
   box-shadow: -.5em .5em #111111;
-  bottom: 1000px;
+  float: left;
 }
 
 .right-sections {
   border: solid #181306e1 5px;
   border-radius: 1%;
   margin: 20px;
-  margin-left: 51%;
   background-color: #4477809f; 
   box-shadow: -.5em .5em #111111;
   opacity: 0.8;
+  float: right;
 }
 
-footer { 
+.footer-content { 
   background-color: #181306e1;
   color: whitesmoke;
   border-radius: 1%;
   text-align: center;
-  margin-bottom: 0;
+  height: 10vh;
 }

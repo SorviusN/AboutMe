@@ -28,8 +28,35 @@ checkUser();
 
 console.log('Username is ' + userName + '.');
 
+
+
+let questionArray = [
+  'Hello there ' + userName + '! Welcome to my webpage. How old do you think I am? Please enter in a number (Hint: It\'s between 20 and 30).',
+  'Second question - In what month was I born?',
+  'Third question - What sport did I play while growing up?',
+  'Fourth question - How many languages do I speak? Please answer in number format.',
+  'Last question - Can you guess my favorite animal? (Hint: it\'s a reptile.)',
+];
+
+let yesArray = [
+  'That is correct, great guessing!',
+  'Correct!! I was born on December 6th, 1996',
+  'You are correct! I played both ice and roller hockey growing up for 10 years.',
+  'Yes!, I speak Spanish and obviously English',
+  'Correct, I have owned a turtle for most of my life and enjoy their laid-back lifestyle',
+];
+
+let noArray = [
+  'So close! Thanks for trying, I am 24 years old.',
+  'Almost! I was born in December.',
+  'I did not play ' + userAnswer[2] + 'unfortunately. I played quite a bit of hockey growing up.',
+  'Good guess, I speak two languages - Spanish and English.',
+  'While I probably also like ' + userAnswer[4] + ' as well.'   
+];
+
+let alternateQuestion = 'While that is technically true, I speak two languages, Spanish and English!'
 function firstQuestion() {
-  let ageQuestion = prompt('Hello there ' + userName + '! Welcome to my webpage. How old do you think I am? Please enter in a number (Hint: It\'s between 20 and 30).');
+  let ageQuestion = prompt();
   if (ageQuestion === '24') {
     amountCorrect++;
     //console.log('That is correct, great guessing!');
@@ -45,7 +72,7 @@ function firstQuestion() {
 firstQuestion();
 
 function secondQuestion() {
-  let birthdayQuestion = prompt('Second question - In what month was I born?');
+  let birthdayQuestion = prompt();
 
   birthdayQuestion = birthdayQuestion.toLowerCase();
 
@@ -64,7 +91,7 @@ function secondQuestion() {
 secondQuestion();
 
 function thirdQuestion() {
-  let sportQuestion = prompt('Third question - What sport did I play while growing up?');
+  let sportQuestion = prompt(;
 
   sportQuestion = sportQuestion.toLowerCase();
 
@@ -87,7 +114,7 @@ function thirdQuestion() {
 thirdQuestion();
 
 function fourthQuestion() {
-  let languageQuestion = prompt('Fourth question - How many languages do I speak? Please answer in number format.');
+  let languageQuestion = prompt();
 
   languageQuestion = languageQuestion.toLowerCase();
 
@@ -105,27 +132,10 @@ function fourthQuestion() {
 }
 fourthQuestion();
 
-//creating variable named myAnswer for the answer to the numbers question.
-let myAnswer = 2;
-
-//creating variable named countDown for the amount of guesses left for the user as well as decrementing a counter for the while loop
-let countDown = 4;
-
 console.log('pre-initializing num for the while loop. Not entirely sure if necessary.');
 
-for (let i = 0; i < 4; i++) {
-  let num = prompt('Now for some guessing games. Try to guess my number between 1 and 10, you have ' + countDown + ' guesses left. Please answer in number format.');
-  if (num > myAnswer) {
-    alert('Not quite, try guessing lower.');
-    countDown--;
-    console.log('Decrementing Countdown.');
-  }
-  else if (num < myAnswer) {
-    alert('Not quite, try guessing higher.');
-    countDown--;
-    console.log('Decrementing Countdown.');
 function fifthQuestion() {
-  let animalQuestion = prompt('Last question - Can you guess my favorite animal? (Hint: it\'s a reptile.)');
+  let animalQuestion = prompt();
 
   animalQuestion = animalQuestion.toLowerCase();
 
@@ -141,16 +151,18 @@ function fifthQuestion() {
     return false;
   }
 }
+
 fifthQuestion();
 
 function guessNumber() {
   //creating variable named myAnswer for the answer to the numbers question.
-  let myAnswer = 2;
+  let myAnswer = Math.floor(Math.ceiling() * 10);
+  console.log('myAnswer number is ' + myAnswer);
   //creating variable named countDown for the amount of guesses left for the user as well as decrementing a counter for the while loop
   let countDown = 5;
   console.log('pre-initializing num for the while loop. Not entirely sure if necessary.');
-  for (let i = 0; i < 5; i++) {
-    let num = prompt('Try to guess my number between 1 and 10, you have ' + (countDown - i)+ ' guesses left. Please answer in number format.');
+  for (let i = 5; i > 0; i--) {
+    let num = prompt('Try to guess my number between 1 and 10, you have ' + i + ' guesses left. Please answer in number format.');
     if (num > myAnswer) {
       alert('Not quite, try guessing lower.');
     }
@@ -207,7 +219,8 @@ for (let a = 0; a < 7; a++) {
 alert('Thank you very much for answering my questions, correct answers for the artists were ' + artists[0] + ', ' + artists[1] + ', ' + artists[2] +', ' + artists[3] + ',' + artists[4] + ', '
   + artists[5] + ', ' + artists[6] + ', ' + artists[7] + ', ' + artists[8] + ', ' + artists[9] + '. Also - you got ' + amountCorrect + ' out of 7 answers correct! Thanks for your time, ' + userName + '.');
 
-
+function playGame() {
+}
 
 
 
