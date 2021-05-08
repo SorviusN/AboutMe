@@ -1,11 +1,10 @@
 * {
   font-family: 'Montserrat', serif;
-  border: solid pink 1px;
 }
 
 body {
   box-sizing: border-box;
-  background-color #FFFB9C;
+  background-color: #fcfbcf;
 }
 
 main {
@@ -47,26 +46,17 @@ header {
 }
 
 
-#intro-img {
-  width: 25%;
+img {
+  width: 350px;
   border-radius: 3%;
   border: solid black 3px;
   box-shadow: -.5em .5em #111111;
   margin-left: 20px;
   opacity: 0.8;
-}
-
-#secondary-img {
-  width: 25%;
-  border-radius: 3%;
-  border: solid black 3px;
-  box-shadow: -.3em .3em #111111;
   float: right;
-  margin-right: 20px;
-  opacity: 0.8;
 }
 
- #intro {
+#intro {
   border: solid #181306e1 5px;
   border-radius: 1%;
   margin: 20px;
@@ -75,11 +65,12 @@ header {
   box-shadow: -.5em .5em #111111;
   opacity: 0.8;
 
-} 
-
-#work-experience {
-  width: 400px;
 }
+
+#education-history {
+  width: 550px;
+}
+
 .sections {
   border: solid #181306e1 5px;
   border-radius: 1%;
@@ -87,17 +78,16 @@ header {
   background-color: #4477809f; 
   opacity: 0.8;
   box-shadow: -.5em .5em #111111;
-  float: left;
 }
 
 .right-sections {
   border: solid #181306e1 5px;
   border-radius: 1%;
-  margin: 20px;
+  margin: 27px;
   background-color: #4477809f; 
   box-shadow: -.5em .5em #111111;
   opacity: 0.8;
-  float: right;
+  float: left;
 }
 
 .footer-content { 
@@ -105,5 +95,5 @@ header {
   color: whitesmoke;
   border-radius: 1%;
   text-align: center;
-  height: 10vh;
+  height: 2vh;
 }
